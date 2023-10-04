@@ -1,0 +1,5 @@
+intalar laravel via composer
+intalar o kit breeze com inertia react typescript e pest
+Criar o Model e a Migration Pizza
+Cria a Factory PizzaFactory --model=Pizza converter array em json
+criar modelo de tabela
