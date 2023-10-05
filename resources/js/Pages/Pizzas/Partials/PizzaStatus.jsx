@@ -21,6 +21,7 @@ export default function PizzaStatus({currentStatus}) {
         }
 
         if (status == currentStatus) {
+            baseClasses = baseClasses.replace('border-r-2', '');
             return `${baseClasses} from-red-500 to-red-600 scale-110 rounded shadow-lg`;
         }
 
