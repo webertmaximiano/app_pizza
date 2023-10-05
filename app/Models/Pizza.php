@@ -23,6 +23,7 @@ class Pizza extends Model
 
     protected $appends = [
         'chef',
+        'last_updated',
     ];
 
     public function getChefAttribute(): string 
@@ -30,6 +31,10 @@ class Pizza extends Model
         return $this->user->name;
     }
     
+    public function getLastUpdatedAttribute(): string 
+    {
+        return $this->updated_at->diffForHumans();
+    }
     //relacao via model
     public function user(): BelongsTo {
         return $this->belongsTo(User::class);

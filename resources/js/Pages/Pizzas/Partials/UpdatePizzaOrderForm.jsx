@@ -87,7 +87,7 @@ export default function UpdatePizzaOrderForm({pizza, className=''}) {
                         onChange={(e) => setData('status', e.target.value)}
                     />
 
-                    <InputError className="mt-2" message={''} />
+                    <InputError className="mt-2" message={data.status.errors} />
                 </div>
                 <div className="flex items-center gap-4">
 
