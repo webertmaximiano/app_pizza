@@ -26,6 +26,10 @@ class PizzaController extends Controller
     }
 
     public function update(Pizza $pizza, Request $request): void {
-        //
+
+        $pizza->update([
+            'status' => $request->status,
+        ]);
+
     }
 }

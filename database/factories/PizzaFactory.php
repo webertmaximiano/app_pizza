@@ -29,7 +29,7 @@ class PizzaFactory extends Factory
         }
 
         $toppings = array_unique($toppings);
-        dd( $toppings);
+        //dd( $toppings);
         return [
             'user_id' => rand(1, 10),
             'size' => Arr::random(['Small', 'Medium', 'Large', 'Extra-Large']),
