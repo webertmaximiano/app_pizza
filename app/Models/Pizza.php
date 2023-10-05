@@ -13,7 +13,7 @@ class Pizza extends Model
 
     protected $guarded = [];
 
-    protected $cast = [
+    protected $casts = [
         'toppings' => 'array',
     ];
 

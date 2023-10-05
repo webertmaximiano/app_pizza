@@ -52,9 +52,9 @@ console.log(pizza)
                     <InputLabel htmlFor="toppings" value="Toppings" />
 
                     <TextInput
-                        id="topping"
+                        id="toppings"
                         className="mt-1 block w-full"
-                        value={pizza.topping.join(',')}
+                        value={pizza.toppings.join(',')}
                         disabled
                     />
 

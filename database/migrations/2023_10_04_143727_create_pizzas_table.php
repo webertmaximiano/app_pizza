@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignIdFor(User::class); //vincula a chave estrangeira pelo model
             $table->string('size');
             $table->string('crust');
-            $table->jsonb('topping');
+            $table->json('toppings');
             $table->string('status');
             $table->timestamps();
         });
